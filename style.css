@@ -105,7 +105,7 @@
     }
 
     .status-wrapper {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .terminal-badge {
@@ -113,10 +113,10 @@
       display: inline-flex;
       align-items: center;
       margin-top: 28px;
-      padding: 8px 18px;
+      padding: 10px 30px;
       border-radius: 30px;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: -0.1px;
       max-width: 100%;
@@ -480,11 +480,6 @@
   color: #888;
   border-top: 1px solid #eee;
   padding-top: 12px;
-}
-
-.read-time {
-  color: #d9381e;
-  font-weight: bold;
 }
 
 .contact-section {

@@ -722,15 +722,15 @@
         width: 100%;
         text-align: center;
         align-items: center;
-    justify-content: center;
-      }
+        justify-content: center;
+        }
 
       .btn-primary {
         width: 100%;
         margin-top: 15px;
       }
 
-  .btn-secondary {
+      .btn-secondary {
     width: 100%;
     text-align: center;
     align-items: center;

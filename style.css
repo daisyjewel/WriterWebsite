@@ -243,18 +243,8 @@
     letter-spacing: 2px;
     color: #9d81ba; /* Warna ungu pastel */
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 0 auto;
 }
-
-.badge-icon {
-      width: 18px;
-      height: 18px;
-      fill: none;
-      stroke: #9d81ba;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
 
   .about-container {
     display: flex;
@@ -296,16 +286,6 @@
     color: #8e8594;
     margin-bottom: 20px;
     text-align: justify;
-}
-
-.section-tag svg {
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: #8b5cf6;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
 }
 
 .skills-container {
@@ -471,17 +451,6 @@
   margin-bottom: 15px;
 }
 
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.75rem;
-  color: #888;
-  border-top: 1px solid #eee;
-  padding-top: 12px;
-}
-
 .contact-section {
   width: 100%;
   padding: 100px 20px;
@@ -535,6 +504,7 @@
   color: #8e8594;
   line-height: 1.6;
   margin-bottom: 32px;
+  text-align: justify;
 }
 
 .contact-email {
@@ -560,6 +530,7 @@
   border-radius: 28px;
   box-shadow: 0 20px 40px rgba(181, 141, 254, 0.08);
   border: 1px solid #fae1ec;
+  margin-top: 70px;
 }
 
 .contact-form {
@@ -637,6 +608,11 @@
 
 
       @media (max-width: 1024px) {
+
+      body {
+      background-color: #FFF5F8; 
+      }
+
       .hero-headline {
         font-size: 70px;
         letter-spacing: -2px;
@@ -725,30 +701,42 @@
         justify-content: center;
       }
 
+      .terminal-badge {
+        width: 100%;
+      }
+      
       .hero-headline {
         font-size: 48px;
         letter-spacing: -1px;
         margin-bottom: 20px;
       }
-
+    
       .hero-description {
         font-size: 16px;
         margin-bottom: 28px;
       }
 
-      .terminal-badge {
-        font-size: 12px;
-        padding: 6px 14px;
-      }
-
+      
       .cta-buttons {
-        gap: 12px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    justify-content: center;
       }
 
-      .btn-primary, .btn-secondary {
-        font-size: 14px;
-        padding: 12px 22px;
+      .btn-primary {
+        width: 100%;
+        margin-top: 15px;
       }
+
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
       .about-section {
         padding: 40px 20px;
@@ -761,12 +749,13 @@
 
     .about-image-wrapper {
     width: 100%;
+    margin-top: 30px;
   }
  
     .about-image {
         height: 380px;
     }
-
+   
     .about-title {
         font-size: 24px;
     }
@@ -774,6 +763,11 @@
     .about-text {
         font-size: 15px;
     }
+
+.skills-container {
+    padding: 0 20px;
+  }
+
 
  .skill-card {
         padding: 28px 24px;
@@ -787,6 +781,9 @@
 
   .magazine-grid {
   grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 40px auto;
 }
 
 .hero-card, .side-card, .triple-card {
@@ -794,13 +791,23 @@
 
 }
 
+.hero-card .image-wrapper,
+  .side-card .image-wrapper,
+  .triple-card .image-wrapper {
+    height: 200px; /* Memaksa semua tinggi wadah gambar di HP cuma 200px (terlihat lanskap/mendatar) */
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
 .contact-container {
     flex-direction: column;
     gap: 40px;
-  }
-
-  .contact-info, .contact-card {
-    max-width: 100%;
   }
 
  .contact-headline {
@@ -809,8 +816,10 @@
   }
 
 .contact-card {
-    padding: 24px;
-  }
+  width: 100%;
+    padding: 20px;
+
+}
 
 }
 
